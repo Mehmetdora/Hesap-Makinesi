@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Odev5" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 + 34" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jyo-9Q-v6v">
+                                <rect key="frame" x="23" y="98" width="347" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="P6E-Ix-ZnG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="G5j-v0-B5i">
+                                <rect key="frame" x="30" y="418" width="354" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9p-l0-fpf">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="173" id="Grj-R2-xyN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="AC">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="35"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="ACButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QuI-Be-9ys"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eka-oD-ahr">
+                                        <rect key="frame" x="182" y="0.0" width="81.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="81.5" id="1VO-mZ-Dfs"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
+                                            <imageReference key="image" image="delete.left.fill" catalog="system" symbolScale="large" variableValue="1"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tiy-RV-bH2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqs-kz-3O9">
+                                        <rect key="frame" x="272.5" y="0.0" width="81.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="81.5" id="fdh-9V-S67"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="÷">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="45"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="bölmeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDi-8I-LkL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="VJO-BQ-IfH"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="YaS-yr-kBo">
+                                <rect key="frame" x="30" y="508" width="354" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAN-a6-2o3">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="7">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rn-PT-Byq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="teh-bn-pnZ">
+                                        <rect key="frame" x="91" y="0.0" width="81.5" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="8">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fd8-ZQ-C69"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8r6-zA-10I">
+                                        <rect key="frame" x="181.5" y="0.0" width="82" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="9">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHj-yJ-8Jz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JE-nj-bo2">
+                                        <rect key="frame" x="272.5" y="0.0" width="81.5" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="x">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="çarpmaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n1d-XG-znJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="rf7-pU-xLl"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="rmk-5T-8Qq">
+                                <rect key="frame" x="30" y="598" width="354" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGV-7R-386">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="4">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OZN-D9-ENr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4go-1H-0HK">
+                                        <rect key="frame" x="91" y="0.0" width="81.5" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="5">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F75-XF-uNl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijw-Gx-g6P">
+                                        <rect key="frame" x="181.5" y="0.0" width="82" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="6">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tce-X1-Eje"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzg-LW-dNT">
+                                        <rect key="frame" x="272.5" y="0.0" width="81.5" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="-">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="çıkarmaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wu9-if-JD1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="pdq-a9-4qU"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="fn2-3h-T2H">
+                                <rect key="frame" x="30" y="688" width="354" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkZ-hC-hIH">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="1">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JCZ-lj-0Z3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jp4-Hu-U4U">
+                                        <rect key="frame" x="91" y="0.0" width="81.5" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="2">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tcF-4R-qtL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vb8-sM-0x1">
+                                        <rect key="frame" x="181.5" y="0.0" width="82" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="3">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GLf-Xb-lAx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0q-mX-fSV">
+                                        <rect key="frame" x="272.5" y="0.0" width="81.5" height="80"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="toplamaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jfq-xL-h8t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="mNn-ng-gHZ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="S5J-iU-nFx">
+                                <rect key="frame" x="30" y="778" width="354" height="80"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9a-OT-zm3">
+                                        <rect key="frame" x="0.0" y="0.0" width="258.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="258.5" id="AJv-se-ghd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="0">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="55"/>
+                                            <attributedString key="attributedSubtitle"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="rakamlarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c3h-Dn-PTk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-6j-xdo">
+                                        <rect key="frame" x="272.5" y="0.0" width="81.5" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="81.5" id="6kE-Gs-vzh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="=">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="50"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="eşittirButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWx-h1-97t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="NRm-S8-eDn"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fn2-3h-T2H" firstAttribute="leading" secondItem="YaS-yr-kBo" secondAttribute="leading" id="70y-Su-dxB"/>
+                            <constraint firstItem="YaS-yr-kBo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ETO-Jb-0fA"/>
+                            <constraint firstItem="rmk-5T-8Qq" firstAttribute="top" secondItem="YaS-yr-kBo" secondAttribute="bottom" constant="10" id="Kah-MA-VSR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fn2-3h-T2H" secondAttribute="trailing" constant="30" id="MPc-an-1lH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rmk-5T-8Qq" secondAttribute="trailing" constant="30" id="MlV-ia-W8c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YaS-yr-kBo" secondAttribute="trailing" constant="30" id="Ner-Fg-k7e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S5J-iU-nFx" secondAttribute="trailing" constant="30" id="OZf-Mi-g4t"/>
+                            <constraint firstItem="Jyo-9Q-v6v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="PMO-p5-o37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G5j-v0-B5i" secondAttribute="trailing" constant="30" id="Uk8-uu-PWD"/>
+                            <constraint firstItem="rmk-5T-8Qq" firstAttribute="top" secondItem="YaS-yr-kBo" secondAttribute="bottom" constant="10" id="bfp-1Y-qbV"/>
+                            <constraint firstItem="fn2-3h-T2H" firstAttribute="leading" secondItem="S5J-iU-nFx" secondAttribute="leading" id="gB3-rM-72M"/>
+                            <constraint firstItem="G5j-v0-B5i" firstAttribute="top" secondItem="Jyo-9Q-v6v" secondAttribute="bottom" constant="20" id="hoG-Fg-nWB"/>
+                            <constraint firstItem="S5J-iU-nFx" firstAttribute="top" secondItem="fn2-3h-T2H" secondAttribute="bottom" constant="10" id="iFX-Pv-2ih"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jyo-9Q-v6v" secondAttribute="trailing" constant="44" id="ihX-EL-ztb"/>
+                            <constraint firstItem="YaS-yr-kBo" firstAttribute="top" secondItem="G5j-v0-B5i" secondAttribute="bottom" constant="10" id="ls3-Vh-n1v"/>
+                            <constraint firstItem="rmk-5T-8Qq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="w34-NG-Qcx"/>
+                            <constraint firstItem="G5j-v0-B5i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="wHp-Ny-HFd"/>
+                            <constraint firstItem="Jyo-9Q-v6v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="wTb-bo-zBn"/>
+                            <constraint firstItem="fn2-3h-T2H" firstAttribute="top" secondItem="rmk-5T-8Qq" secondAttribute="bottom" constant="10" id="xuU-aS-d3P"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FRd-Rz-AqA"/>
+                    <connections>
+                        <outlet property="acOL" destination="o9p-l0-fpf" id="eql-2G-hli"/>
+                        <outlet property="altıOL" destination="Ijw-Gx-g6P" id="uQg-hb-d9y"/>
+                        <outlet property="artıOL" destination="W0q-mX-fSV" id="of5-wC-7Cl"/>
+                        <outlet property="beşOL" destination="4go-1H-0HK" id="4u6-14-ZyR"/>
+                        <outlet property="birOL" destination="EkZ-hC-hIH" id="fPO-D9-y3R"/>
+                        <outlet property="bölüOL" destination="gqs-kz-3O9" id="oEf-uA-fmz"/>
+                        <outlet property="çarpıOL" destination="3JE-nj-bo2" id="hgv-ze-vpc"/>
+                        <outlet property="deleteOL" destination="eka-oD-ahr" id="gCg-1P-63l"/>
+                        <outlet property="dokuzOL" destination="8r6-zA-10I" id="J7P-cl-FHD"/>
+                        <outlet property="dörtOL" destination="mGV-7R-386" id="yf1-W3-vhF"/>
+                        <outlet property="eksiOL" destination="Mzg-LW-dNT" id="YAJ-dq-1NL"/>
+                        <outlet property="eşittirOL" destination="SYg-6j-xdo" id="laa-e5-NZt"/>
+                        <outlet property="ikiOL" destination="Jp4-Hu-U4U" id="NqZ-LP-UIZ"/>
+                        <outlet property="label" destination="Jyo-9Q-v6v" id="IXb-aN-Wyq"/>
+                        <outlet property="sekizOL" destination="teh-bn-pnZ" id="geH-xf-WlQ"/>
+                        <outlet property="sıfırOL" destination="i9a-OT-zm3" id="ixx-aI-4GT"/>
+                        <outlet property="üçOL" destination="Vb8-sM-0x1" id="eY7-VU-62A"/>
+                        <outlet property="yediOL" destination="FAN-a6-2o3" id="3TN-yS-xfD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="3.3482142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete.left.fill" catalog="system" width="128" height="102"/>
+    </resources>
+</document>
